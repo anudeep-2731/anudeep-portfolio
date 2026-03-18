@@ -49,8 +49,8 @@ export default function Hero() {
       {/* Background Atmosphere */}
       <div className="absolute inset-0 z-0 bg-background overflow-hidden">
         {/* Large radial glows */}
-        <div className="absolute top-[-10%] right-[-5%] w-[60vw] h-[60vw] rounded-full bg-primary/18 blur-[120px]" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#ff2200]/10 blur-[100px]" />
+        <div className="absolute top-[-10%] right-[-5%] w-[60vw] h-[60vw] rounded-full bg-primary/18 blur-[120px] will-change-transform transform-gpu" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-[#ff2200]/10 blur-[100px] will-change-transform transform-gpu" />
 
         {/* Diagonal thin lines (fanning from top-right) */}
         <svg

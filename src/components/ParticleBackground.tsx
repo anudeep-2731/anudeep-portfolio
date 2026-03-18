@@ -27,7 +27,7 @@ export default function ParticleBackground() {
             value: "transparent",
           },
         },
-        fpsLimit: 60,
+        fpsLimit: 30,
         particles: {
           color: {
             value: "#ff6b35",
@@ -67,7 +67,7 @@ export default function ParticleBackground() {
             value: { min: 1, max: 3 }, // Small dots
           },
         },
-        detectRetina: true,
+        detectRetina: false,
       }}
     />
   );

@@ -165,10 +165,10 @@ const TiltCard = ({ project }: { project: Project }) => {
   useEffect(() => {
     if (cardRef.current) {
       VanillaTilt.init(cardRef.current, {
-        max: 8,
+        max: 4,
         speed: 400,
         glare: true,
-        "max-glare": 0.1,
+        "max-glare": 0.05,
         scale: 1.02,
       });
     }
