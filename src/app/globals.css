@@ -1,27 +1,89 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground-rgb: 232, 196, 168; /* textPrimary */
+  --background-start-rgb: 12, 9, 7; /* background */
+  --background-end-rgb: 12, 9, 7;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: #0c0907;
+  /* Very faint dot grid pattern */
+  background-image: radial-gradient(rgba(255, 107, 53, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+  cursor: none; /* Hide default cursor to use custom one */
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1208;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6b35;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e55a28;
+}
+
+/* Custom Cursor Styles */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #ff6b35;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s;
+}
+
+.custom-cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 107, 53, 0.2);
+  box-shadow: 0 0 20px 10px rgba(255, 107, 53, 0.2);
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+/* Hover effect on interactive elements */
+a, button, input, textarea, select {
+  cursor: none; /* ensure default cursor is hidden even on links */
+}
+
+a:hover, button:hover {
+  /* The shadow glow requested */
+  box-shadow: 0 0 12px rgba(255, 107, 53, 0.3) !important;
+}
+
+/* Hide custom cursor on mobile to avoid layout issues */
+@media (max-width: 768px) {
+  body, a, button, input, textarea, select {
+    cursor: auto;
+  }
+  .custom-cursor, .custom-cursor-glow {
+    display: none;
   }
 }
