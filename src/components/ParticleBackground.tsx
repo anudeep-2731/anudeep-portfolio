@@ -48,7 +48,7 @@ export default function ParticleBackground() {
           number: {
             density: {
               enable: true,
-              area: 1200,
+              width: 1200,
             },
             value: 40, // Sparse density
           },

@@ -54,10 +54,6 @@ export default function Certifications() {
                   {/* Border wrapper for hover effect */}
                   <div 
                     className="absolute inset-0 rounded-lg border border-transparent transition-colors duration-300"
-                    style={{
-                      // We can't easily hover-border with inline styles in Tailwind without a wrapper or complex plugins, 
-                      // so we use a CSS technique: The wrapper gets a border on hover
-                    } as any}
                   />
                   {/* Tailwind classes for the hover glow we injected via style tag below */}
                   

@@ -40,7 +40,7 @@ export default function Contact() {
           <motion.div variants={itemVariants} className="flex flex-col items-center">
             
             <h2 className="font-clash text-5xl md:text-[64px] text-textPrimary font-semibold tracking-tight mb-6">
-              Let's Build Something.
+              Let&apos;s Build Something.
             </h2>
             
             <p className="font-jakarta text-[14px] md:text-[16px] text-[#6b4030] max-w-xl mx-auto mb-16 px-4">

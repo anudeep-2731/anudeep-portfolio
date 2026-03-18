@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ParticleBackground from "./ParticleBackground";
 import AnimatedSection, { itemVariants } from "./AnimatedSection";
-import Image from "next/image"; // For potential real photo upload later
 
 const TYPING_WORDS = [
   "Data Engineer",

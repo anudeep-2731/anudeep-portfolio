@@ -151,7 +151,15 @@ const PROJECTS = [
   },
 ];
 
-const TiltCard = ({ project }: { project: any }) => {
+type Project = {
+  id: string;
+  title: string;
+  description: string;
+  tags: string[];
+  visual: React.ReactNode;
+};
+
+const TiltCard = ({ project }: { project: Project }) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -224,7 +232,7 @@ export default function Projects() {
 
           {/* 2x2 Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            {PROJECTS.map((project, index) => (
+            {PROJECTS.map((project) => (
               <motion.div key={project.id} variants={itemVariants}>
                 <TiltCard project={project} />
               </motion.div>

@@ -52,7 +52,7 @@ export default function WorkExperience() {
 
             {/* Timeline Entries */}
             <div className="flex flex-col space-y-16">
-              {EXPERIENCE_DATA.map((item, index) => (
+              {EXPERIENCE_DATA.map((item) => (
                 <motion.div 
                   key={item.id} 
                   variants={itemVariants}

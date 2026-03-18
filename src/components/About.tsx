@@ -16,7 +16,7 @@ export default function About() {
             </h2>
             
             <p className="font-jakarta text-[13px] text-[#8a5a40] leading-[1.8] max-w-lg">
-              I'm a Data Engineering Consultant at <strong className="text-[#cc8866] font-semibold">EY GDS</strong>, Hyderabad, working within a specialist <strong className="text-[#cc8866] font-semibold">Databricks Solutions</strong> team that delivers data platforms for enterprise clients. Currently architecting a Retail Agentic Recommendation Engine using the latest Databricks stack — <strong className="text-[#cc8866] font-semibold">AgentBricks</strong>, <strong className="text-[#cc8866] font-semibold">Mosaic AI</strong>, Genie, Lakebase, and Lakeflow Connect. 
+              I&apos;m a Data Engineering Consultant at <strong className="text-[#cc8866] font-semibold">EY GDS</strong>, Hyderabad, working within a specialist <strong className="text-[#cc8866] font-semibold">Databricks Solutions</strong> team that delivers data platforms for enterprise clients. Currently architecting a Retail Agentic Recommendation Engine using the latest Databricks stack — <strong className="text-[#cc8866] font-semibold">AgentBricks</strong>, <strong className="text-[#cc8866] font-semibold">Mosaic AI</strong>, Genie, Lakebase, and Lakeflow Connect. 
               <br /><br />
               Previously at <strong className="text-[#cc8866] font-semibold">Accenture</strong> for 2+ years building medallion pipelines, IoT digital twin platforms, and real-time streaming infrastructure on Azure. I hold <strong className="text-[#cc8866] font-semibold">10 cloud and data engineering certifications</strong> across Databricks, Azure, AWS, Snowflake, and GitHub.
             </p>
